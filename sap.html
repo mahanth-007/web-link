@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Venkateshwara College Of Engineering</title>
+  <style>
+    /* Add your styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      background-color: white;
+      background-image: url('download.jfif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #555;
+      padding: 10px;
+    }
+    section {
+      padding: 20px;
+      color: white;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Add more styles for your content here */
+
+    /* Popup styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sri Venkateshwara College Of Engineering</h1>
+  </header>
+
+  <nav>
+    <a href="#academics">Academics</a>
+    <a href="#sports">Sports</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section id="academics">
+    <h2>Academics</h2>
+    <!-- Add academic content here -->
+  </section>
+
+  <section id="sports">
+    <h2>Sports</h2>
+    <!-- Add sports content here -->
+  </section>
+
+  <section id="facilities">
+    <h2>Facilities</h2>
+    <img src="Facilities.png" alt="Facilities">
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    Established in 2001, SVCE - Sri Venkateshwara College of Engineering is a premier Institute located in Karnataka. A leading institute in the city Degree courses including 10 UG and 6 PG courses. These programs are offerred in Full Time mode. SVCE - Sri Venkateshwara College of Engineering is a premier institute for B.E. / B.Tech, M.E./M.Tech, MBA/PGDM courses. Candidate can pursue in multiple range of courses like B.E. / B.Tech, M.E./M.Tech, MBA/PGDM with the stream of Engineering, Business & Management Studies, IT & Software. Institute give offer to students to gain proficiency & expertise in the specialization of Mechatronics Engineering, Electrical Engineering, Computer Science Engineering, Civil Engineering, Electronics Engineering, Mechanical Engineering, Information Technology, Electronics & Communication Engineering. Courses offered by institute are recognized and acknowlegded by approving bodies like AICTE. Most importantly, these courses with 954 seats are imparted at affordable fees, which increase accessibility and allow students the opportunity to gain knowledge and skills in their chosen field. Courses offered by the Institute are in the fee range of INR 116,940-360,240 for a total of 954 candidates. SVCE - Sri Venkateshwara College of Engineering offers good infrastructure like Boys Hostel, Cafeteria, Girls Hostel, Hostel, Labs, Library, Shuttle Service, Sports Complex, Wi-Fi Campus to students.
+
+
+  </section>
+  <!-- Popup and overlay for admission enquiry form -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="admissionPopup">
+    <h2>Admission Enquiry Form</h2>
+    <!-- Add your admission enquiry form HTML here -->
+    <form>
+      <!-- Your form fields go here -->
+      <button onclick="closePopup()">Close</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Sri Venkateshwara College Of Engineering. All rights reserved.</p>
+  </footer>
+
+  <script>
+  // Function to display the admission popup
+  function showPopup() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('admissionPopup').style.display = 'block';
+  }
+
+  // Function to close the admission popup
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('admissionPopup').style.display = 'none';
+  }
+</script>
+
+
+</body>
+</html>

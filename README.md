@@ -1,1 +1,1 @@
-<h1>Cllege Web Site</h1>
+<h1>College Web Site</h1>
